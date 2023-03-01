@@ -1,0 +1,13 @@
+<div class="header">
+<a routerLink="/home" routerLinkActive="activepage"> Home</a>
+<a routerLink="/about-us" routerLinkActive="activepage" > About us</a>
+<a routerLink="/contact" routerLinkActive="activepage"> Contact</a>
+<a [routerLink]="['/student','john']" routerLinkActive="activepage"> Student 1</a>
+<a [routerLink]="['/student','max']" routerLinkActive="activepage"> Student 2</a>
+<a (click)="studentclick('James')">Student 3</a>
+<a (click)="studentclick('Test')">Student 3</a>
+</div>
+<router-outlet></router-outlet>
+<div class="footer">
+Copyright
+</div>
